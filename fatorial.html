@@ -1,0 +1,40 @@
+<!Doctype html>
+<html lang = "pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" 
+    content="width=device-width, initial scale = 1.0">
+    <title>Fatorial</title>
+</head>
+<body>
+    <h1>Fatorial</h1>
+    <p>Por favor, utilize a função: fatorial(x) no console</p>
+    <style>
+        body{
+            background-color: rgba(246, 247, 248, 0.945);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>  
+
+    <script>
+        function fatorial(x){
+            if (x<0){
+                return 'Não são permitidos números negativos'
+            } else if(x==0 || x==1){
+                return 'O resultado é 1'
+            } else{
+                var acumulador = 1
+                for (acumulador;x>=1; x--){
+                    acumulador=acumulador*x
+                } return acumulador
+
+
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
